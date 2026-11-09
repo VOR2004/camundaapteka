@@ -1,0 +1,22 @@
+{
+  "id": "refresh_order",
+  "type": "default",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "schemaVersion": 18,
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.52.0"
+  },
+  "components": [
+    {
+      "type": "text",
+      "text": "# Обновление статуса\n\nСначала поменяйте статус заказа на http://localhost:3001. Затем завершите эту задачу — процесс выполнит новый REST-запрос.",
+      "id": "refresh_order_0",
+      "layout": {
+        "row": "refresh_order_row_0",
+        "columns": null
+      }
+    }
+  ]
+}

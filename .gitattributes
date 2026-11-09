@@ -1,0 +1,13 @@
+* text=auto
+*.java text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.form text eol=lf
+*.bpmn text eol=lf
+*.kts text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary

@@ -1,0 +1,33 @@
+{
+  "id": "view_status",
+  "type": "default",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "schemaVersion": 18,
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.52.0"
+  },
+  "components": [
+    {
+      "type": "text",
+      "text": "# Статус заказа\n\nЗаказ: {{orderId}}\n\nСтатус: **{{orderResponse.body.status}}**\n\nОбновлён: {{orderResponse.body.updatedAt}}\n\nPAID — оплачен; ASSEMBLING — собирается; READY — готов к выдаче; DELIVERED — выдан; CANCELLED — отменён.",
+      "id": "view_status_0",
+      "layout": {
+        "row": "view_status_row_0",
+        "columns": null
+      }
+    },
+    {
+      "type": "checkbox",
+      "key": "continueTracking",
+      "label": "Продолжить отслеживание",
+      "defaultValue": true,
+      "id": "view_status_1",
+      "layout": {
+        "row": "view_status_row_1",
+        "columns": null
+      }
+    }
+  ]
+}

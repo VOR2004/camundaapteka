@@ -1,0 +1,8 @@
+body { font: 17px system-ui; max-width: 1000px; margin: 48px auto; padding: 0 24px; color: #17212e; }
+form { padding: 24px; background: #f3f5f7; border-radius: 12px; display: flex; gap: 16px; flex-wrap: wrap; align-items: end; }
+label { display: flex; flex-direction: column; gap: 8px; }
+input, select, button { font: inherit; padding: 12px; }
+button { background: #ffdd2d; border: 0; border-radius: 8px; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; margin: 24px 0; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
+.note { color: #536171; }

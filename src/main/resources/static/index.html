@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Т-Аптеки: мок API</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <h1>Т-Аптеки: статус заказа</h1>
+  <p>Сохраните статус, затем завершите задачу «Запросить обновление» в Tasklist.</p>
+  <form action="/set" method="post">
+    <label>Номер заказа
+      <input name="orderId" value="1001" required pattern="[A-Za-z0-9_-]{1,64}" maxlength="64">
+    </label>
+    <label>Новый статус
+      <select name="status">
+        <option value="PAID">PAID — оплачен</option>
+        <option value="ASSEMBLING">ASSEMBLING — собирается</option>
+        <option value="READY">READY — готов к выдаче</option>
+        <option value="DELIVERED">DELIVERED — выдан</option>
+        <option value="CANCELLED">CANCELLED — отменён</option>
+      </select>
+    </label>
+    <button type="submit">Сохранить статус</button>
+  </form>
+  <p id="message" role="status">Загрузка заказов…</p>
+  <table>
+    <thead><tr><th>Заказ</th><th>Сохранённый статус</th><th>Обновлён (UTC)</th></tr></thead>
+    <tbody id="orders"></tbody>
+  </table>
+  <p><a href="/orders/1001">JSON заказа 1001</a> · <a href="http://localhost:8080/tasklist">Tasklist</a> · <a href="http://localhost:8080/operate">Operate</a></p>
+  <p class="note">Данные хранятся в памяти и сбрасываются после перезапуска.</p>
+</body>
+</html>

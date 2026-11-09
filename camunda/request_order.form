@@ -1,0 +1,36 @@
+{
+  "id": "request_order",
+  "type": "default",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "schemaVersion": 18,
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.52.0"
+  },
+  "components": [
+    {
+      "type": "text",
+      "text": "# Отслеживание заказа\nВведите номер оплаченного заказа.",
+      "id": "request_order_0",
+      "layout": {
+        "row": "request_order_row_0",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "key": "orderId",
+      "label": "Номер заказа",
+      "defaultValue": "1001",
+      "validate": {
+        "required": true
+      },
+      "id": "request_order_1",
+      "layout": {
+        "row": "request_order_row_1",
+        "columns": null
+      }
+    }
+  ]
+}
